@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title>Password</title>
+        <meta charset="UTF-8">
+        <meta name="viweport" content="width=device-width">
+        <link rel="stylesheet" href="pro.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Symbols+Rounded">
+    </head>
+    <body>
+        <div class="container">
+        <h2>Password Generator</h2>
+        <div class="inner">
+            <div class="box">
+                <input type="text" placeholder="Generate your Password" disabled> 
+                <span class="material-symbols-rounded">copy_all</span>
+            </div>
+            <div class="pass-indicator"></div>
+            <div class="passlength">
+                <div class="details">
+                <label for="">Password Length </label>
+                <span></span>
+                </div>
+                <input type="range" min="1"  max="30" value="15" step="1">
+            </div>
+            <div class="passsettings">
+                <label class="title">Password Settings</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" id="lower" checked>
+                        <label for="lower">Lower Case(a-z)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="upper">
+                        <label for="upper">Upper Case(A-Z)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="num">
+                        <label for="num">Numbers(0-9)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="symbol">
+                        <label for="symbol">Symbols(!@*^)</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="dup">
+                        <label for="dup">Exclude duplicate</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" id="space">
+                        <label for="space">Include space</label>
+                    </li>
+                </ul>
+            </div>
+            <button class="button">Generate Password</button>
+        </div>
+        </div>
+        <script type="text/javascript" src="pro.js"></script>
+    </body>
+</html>
